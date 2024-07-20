@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>task2</title>
+</head>
+<body>
+  
+  <header class="header">
+    <a href="#" class="logo">MITHUN KUMAR N</a>
+    <i class='bx bx-menu' id="menu-icon" ></i>
+    <nav class="navbar">
+        <a href="#home" class="active">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skill">SKILL</a>
+        <a href="#project">PROJECT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+  
+  
+<section class="home" id="home">
+  <div class="home-content">
+      <h3>Myself, </h3>
+      <h1>Mithun Kumar N</h1>
+      <h3>And I 'm a <span>Computer Science and Engineering student</span></h3>
+      <p>Web Development Project</p>
+      <div class="social-media">
+          <a href="#"><i class='bx bxl-facebook' ></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></a>
+          <a href="#"><i class='bx bxl-github' ></i></a>
+          <a href="#"><i class='bx bxl-instagram' ></i></a>
+          
+      </div>
+      <a href="cv.pdf" download="example.pdf" class="btn">Download PDF</a>
+
+  </div>
+  <div class="home-img">
+      <img src="/Images/r1.jpeg" alt="">
+  </div>
+</section>  
+
+<section class="about" id="about">
+  <div class="about-img">
+      <img src="/Images/r1.jpeg" alt="">
+  </div>
+  <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <p>Dedicated and adaptable B.E. Computer Science Engineering student at Velammal Engineering College with hands-on experience in front-end web development using HTML, CSS, and basic knowledge of Python. Known for being a promising student who consistently completes tasks efficiently and effectively. Eager to apply technical skills and a strong work ethic to contribute to team success in any given role.</p>
+      <a href="" class="btn">Read More</a>
+  </div>
+</section>
+
+<section class="skill" id="skill">
+  <h2 class="heading">My <span>skills</span> </h2>
+  <div class="skill-box">
+      <h3><i class='bx bxl-html5 bx-tada' ></i>HTML</h3>
+      <h3><i class='bx bxl-javascript bx-tada' ></i>JAVASCRIPT</h3>
+      <h3><i class='bx bxl-css3 bx-tada' ></i>CSS</h3>
+      <h3><i class='bx bxl-python bx-tada' ></i>PYTHON</h3>
+      <h3><i class='bx bxl-java bx-tada' ></i>JAVA</h3>
+  </div>
+</section>
+<section class="project"  id="project">
+  <h2 class="heading">Latest <span>Project</span></h2>
+  <div class="project-container">
+      <div class="project-box">
+          <img src="/Images/portfolio1.jpg" alt="">
+          <div class="project-layer">
+              <h4>Login page</h4>
+              <p>Unlock Your Digital World with a Secure Login</p>
+              <a href=""><i class='bx bx-link-external' ></i></a>
+          </div>
+      </div>
+      <div class="project-box">
+          <img src="/Images/portfolio2.jpg" alt="">
+          <div class="project-layer">
+              <h4>portfolio</h4>
+              <p>Elevate Your Career: Your Journey in Pixels</p>
+              <a href=""><i class='bx bx-link-external' ></i></a>
+          </div>
+      </div>
+      <div class="project-box">
+          <img src="/Images/portfolio3.jpg" alt="">
+          <div class="project-layer">
+              <h4>Live weather</h4>
+              <p>Stay Ahead of the Elements: Real-Time Weather at Your Fingertips</p>
+              <a href=""><i class='bx bx-link-external' ></i></a>
+          </div>
+      </div>
+      <div class="project-box">
+          <img src="/Images/portfolio4.jpg" alt="">
+          <div class="project-layer">
+              <h4>Navbar</h4>
+              <p>Navigation Simplified: Your Gateway to Seamless Browsing</p>
+              <a href=""><i class='bx bx-link-external' ></i></a>
+          </div>
+      </div>
+
+      <div class="project-box">
+          
+          <div class="project-layer">
+              <h4>Restaurants</h4>
+              <p>Savor the Moment: Exploring Culinary Delights on Your Screen</p>
+              <a href=""><i class='bx bx-link-external' ></i></a>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <!-- contact section -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+  <form action="">
+  <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+  </div>
+  <div class="input-box">
+      <input type="number" placeholder="Mobile Number">
+      <input type="text" placeholder="Email Address">
+ 
+  <textarea name= "" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+
+</div>
+<button class="btn">SUBMIT</button>
+</form>
+
+
+</section>
+<!-- footer section -->
+<footer class="footer">
+  <div class="footer-text">
+      <p>Copyright &copy; 2024 by Mithun kumar | ALL Rights Reserved.</p>
+  </div>
+  <div class="footer-icon">
+      <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+  <script src="script.js"></script>
+
+<script>
+ 
+  document.getElementById("download-button").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.open("M Bilal Reactjs.pdf", "_blank");
+  });
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
